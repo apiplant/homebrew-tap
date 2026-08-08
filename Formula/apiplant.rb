@@ -5,27 +5,28 @@
 class Apiplant < Formula
   desc "Point it at an app directory and it serves an API"
   homepage "https://github.com/apiplant/apiplant"
-  version "0.7.0"
+  version "0.8.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   # There are no bottles: the release archives *are* the binaries, so the
-  # formula only unpacks what the workflow already built for each platform.
-  # macOS x86_64 is absent because the release does not build it.
+  # formula only unpacks what the tagged workflow already built for each
+  # platform. packaging/local-release.sh can add extra host-built assets later,
+  # but this template stays aligned with the CI release matrix.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.7.0/apiplant-v0.7.0-aarch64-apple-darwin.tar.gz"
-      sha256 "8f728936b7a09358b481313146b7ffff4bbab2da27710e47c79b1803430367ff"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.8.0/apiplant-v0.8.0-aarch64-apple-darwin.tar.gz"
+      sha256 "805b6f695f1e9462066354d7d6bff58ec49ecb3ecd0a6f69f8adf54f2e2d0517"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.7.0/apiplant-v0.7.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "597ae9ae68d597a33f7023c90b97baf206908585703e60c60396cd27ac9f452e"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.8.0/apiplant-v0.8.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "908b274f62c57d85d121ce5f73b6f94cb5a3d761ebb30a2a660d0a4d1d59c40e"
     end
     on_arm do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.7.0/apiplant-v0.7.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "abf7cb0dd79f6470463dda50fa43dae73ee2f67a2b9866152d2df3c5e5446498"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.8.0/apiplant-v0.8.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "79892cebd1ee36cbe451bf24a29e31fe9ee702ce78d86aa4e73d96447ecf0a4e"
     end
   end
 
