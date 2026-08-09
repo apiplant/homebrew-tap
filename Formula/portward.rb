@@ -5,7 +5,7 @@
 class Portward < Formula
   desc "Live map of listening ports on localhost, with a web UI"
   homepage "https://github.com/apiplant/portward"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   # There are no bottles: the release archives *are* the binaries, so the
@@ -13,19 +13,19 @@ class Portward < Formula
   # platform.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/portward/releases/download/v0.3.1/portward-v0.3.1-aarch64-apple-darwin.tar.gz"
-      sha256 "5fea5f196effae3ae71cfaf8e14132903535019e79e802948614568b331c0a50"
+      url "https://github.com/apiplant/portward/releases/download/v0.3.2/portward-v0.3.2-aarch64-apple-darwin.tar.gz"
+      sha256 "3644823a3c67b2eb6cf31737c42692c16e22aab25cb3dccd9ac2b35698d89c6e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/portward/releases/download/v0.3.1/portward-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "85971eae4fc719d68b65bdd714509cb6b8c20502f9f68212bddc7000eaa42593"
+      url "https://github.com/apiplant/portward/releases/download/v0.3.2/portward-v0.3.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8c3904d2bf7fa2e7ee91254154dbd515a55a6fbe90c30d03c9b365dca54dc708"
     end
     on_arm do
-      url "https://github.com/apiplant/portward/releases/download/v0.3.1/portward-v0.3.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f1e7439b34a2fe675307cd42169bccfcd1c6f8c2dd685c80cd2591caf0e33836"
+      url "https://github.com/apiplant/portward/releases/download/v0.3.2/portward-v0.3.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ffe422fd15ec28a67aa602eaba2dd170e229bf4b6be7e70cb151330728038730"
     end
   end
 
