@@ -5,7 +5,7 @@
 class Apiplant < Formula
   desc "Point it at an app directory and it serves an API"
   homepage "https://github.com/apiplant/apiplant"
-  version "0.8.1"
+  version "0.8.2"
   license any_of: ["MIT", "Apache-2.0"]
 
   # There are no bottles: the release archives *are* the binaries, so the
@@ -14,19 +14,19 @@ class Apiplant < Formula
   # but this template stays aligned with the CI release matrix.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.8.1/apiplant-v0.8.1-aarch64-apple-darwin.tar.gz"
-      sha256 "a0604f6f3c93aceab01b76dce6d175011c72432f4313f60d381d8d01b4d9504f"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.8.2/apiplant-v0.8.2-aarch64-apple-darwin.tar.gz"
+      sha256 "2f667061e10ed253c1a8b31bfef90d7680be3dfb4a71d5e24f5341480e69d8c7"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.8.1/apiplant-v0.8.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c3654fddb1e6ab4817eef6926bc1c14d5d18540b5b4241c74c69e2df72cce7e0"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.8.2/apiplant-v0.8.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "acfdccf3bac450db836666a3a8cdf8e7b0f3cf5bb6b7f121e9a15baa4bb13dbe"
     end
     on_arm do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.8.1/apiplant-v0.8.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "59f57e58e1b3504182f0c111d877a2695214e44a0e59534772ca036e746958ad"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.8.2/apiplant-v0.8.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1aa1192f5d02f8e18f430f99e625309bdab0925209864d3496e201d34fc9ec73"
     end
   end
 
