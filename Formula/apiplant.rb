@@ -5,28 +5,32 @@
 class Apiplant < Formula
   desc "Point it at an app directory and it serves an API"
   homepage "https://github.com/apiplant/apiplant"
-  version "0.9.1"
+  version "0.10.0"
   license any_of: ["MIT", "Apache-2.0"]
+
+  # `apiplant-slim` is the same program without TypeScript support, and installs
+  # the same `bin/apiplant`. brew has to be told, rather than discovering it as
+  # a collision at link time.
+  conflicts_with "apiplant-slim", because: "both install the apiplant binary"
 
   # There are no bottles: the release archives *are* the binaries, so the
   # formula only unpacks what the tagged workflow already built for each
-  # platform. packaging/local-release.sh can add extra host-built assets later,
-  # but this template stays aligned with the CI release matrix.
+  # platform, and this template stays aligned with the CI release matrix.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.9.1/apiplant-v0.9.1-aarch64-apple-darwin.tar.gz"
-      sha256 "92cda44dbd92a3dd144a1f57a19c11504373c513bfdda4be6046cd6a1b512918"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.10.0/apiplant-v0.10.0-aarch64-apple-darwin.tar.gz"
+      sha256 "b50b37d7b02b0faed89f7abf22d67dc3e2cdc6034e0957632e7c9e71c4d92851"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.9.1/apiplant-v0.9.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "65b252799fb2563bebd6b54a20fd4f5492690ddcf47a566717993dbb19b118ae"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.10.0/apiplant-v0.10.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0fcc9863a261b3c3859c8a22f649d2e0955b379a9a46b5aac68674a9d8d7dd74"
     end
     on_arm do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.9.1/apiplant-v0.9.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "783018a13351c64398ec8efab1a3431e1736ac1eb6ae482b2aa99edbde8dba74"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.10.0/apiplant-v0.10.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8d81d9063ddae5a18f926524b5cb638f059bd698f46168fb27322dbc42c7b7cd"
     end
   end
 
@@ -40,6 +44,9 @@ class Apiplant < Formula
       `apiplant build` shells out to a toolchain per language — cargo for .rs,
       cc for .c, zig for .zig, go for .go — so install whichever your functions
       use. TypeScript needs nothing; it is transpiled in-process.
+
+      For a build without TypeScript — and so without V8, which is two thirds
+      of the binary — use `brew install apiplant/tap/apiplant-slim`.
     EOS
   end
 
