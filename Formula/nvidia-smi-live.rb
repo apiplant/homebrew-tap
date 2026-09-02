@@ -6,7 +6,7 @@
 class NvidiaSmiLive < Formula
   desc "Live-updating nvidia-smi with a minimal terminal UI"
   homepage "https://github.com/apiplant/nvidia-smi-live"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   # NVML is a Linux driver interface: there is no macOS build, so the formula
@@ -15,12 +15,12 @@ class NvidiaSmiLive < Formula
   # already built for each platform.
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/nvidia-smi-live/releases/download/v0.1.0/nvidia-smi-live-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7b21e238cef357e7ed12fbc90af49d03db1f0c0b136ab9464557e7e2ffeff5ea"
+      url "https://github.com/apiplant/nvidia-smi-live/releases/download/v0.1.1/nvidia-smi-live-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f1e5666f724f3bd514869a0ff768e0b35529336aab117cde83b83c7dd4669336"
     end
     on_arm do
-      url "https://github.com/apiplant/nvidia-smi-live/releases/download/v0.1.0/nvidia-smi-live-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "255f8ec6b2da600f558698a744fbb9bf003da8a108a015560320c638fda379c2"
+      url "https://github.com/apiplant/nvidia-smi-live/releases/download/v0.1.1/nvidia-smi-live-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3ab0abce9a649337e09441bea87d510ecd02fa6fad51e5be55fa253ead59c9e0"
     end
   end
 
