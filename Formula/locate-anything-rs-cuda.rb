@@ -5,7 +5,7 @@
 class LocateAnythingRsCuda < Formula
   desc "Rust (candle) inference for nvidia/LocateAnything-3B visual grounding (CUDA build)"
   homepage "https://github.com/apiplant/locate-anything-rs"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   # Linux x86_64 only: no CUDA on Apple Silicon, and no arm64 CUDA build. It
@@ -15,8 +15,8 @@ class LocateAnythingRsCuda < Formula
   depends_on arch: :x86_64
   conflicts_with "locate-anything-rs", because: "both install the same binaries"
 
-  url "https://github.com/apiplant/locate-anything-rs/releases/download/v0.1.0/locate-anything-rs-cuda-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-  sha256 "97c9d54c7c043206b235c9375c7e20c46b3c5a1c5a933a1d9215ce59ade31aa5"
+  url "https://github.com/apiplant/locate-anything-rs/releases/download/v0.1.1/locate-anything-rs-cuda-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+  sha256 "b3b682dd2ac6850953eaf54611c9c1a9ce7654d222121b6fd987e89651168cc3"
 
   def install
     bin.install "locate-anything"
