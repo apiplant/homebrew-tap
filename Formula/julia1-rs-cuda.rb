@@ -5,7 +5,7 @@
 class Julia1RsCuda < Formula
   desc "Rust CPU/CUDA inference runtime for the Julia-1 decision model (CUDA build)"
   homepage "https://github.com/apiplant/julia1-rs"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   # Linux x86_64 only: no CUDA on Apple Silicon, and no arm64 CUDA build. It
@@ -15,8 +15,8 @@ class Julia1RsCuda < Formula
   depends_on arch: :x86_64
   conflicts_with "julia1-rs", because: "both install the same binaries"
 
-  url "https://github.com/apiplant/julia1-rs/releases/download/v0.1.0/julia1-rs-cuda-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-  sha256 "ac52bd56f4bdc9eb096cdf135f68ec516bc31cbf83bfb7857ea8f16aa572bf01"
+  url "https://github.com/apiplant/julia1-rs/releases/download/v0.1.1/julia1-rs-cuda-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+  sha256 "07a8845942a80750e2dfe792a44b38fde3a18921f0593e55c9599cca4c2c8811"
 
   def install
     bin.install "julia1"
