@@ -5,25 +5,25 @@
 class MergeSafetensorsRs < Formula
   desc "Merge sharded .safetensors files into one, streaming"
   homepage "https://github.com/apiplant/merge-safetensors-rs"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   # No bottles: the release archives *are* the binaries, so the formula only
   # unpacks what the tagged workflow already built for each platform.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/merge-safetensors-rs/releases/download/v0.2.0/merge-safetensors-rs-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "7ba493fec497abe0179aac0f88d4f0f6001b60e6e883ead6b6456b00a223dcae"
+      url "https://github.com/apiplant/merge-safetensors-rs/releases/download/v0.2.1/merge-safetensors-rs-v0.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "40c6e3ee1280e2cda67e8ffcbcaf031f6b820dd1519658e3f92e8e4f2947c2e8"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/merge-safetensors-rs/releases/download/v0.2.0/merge-safetensors-rs-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "64f58fb94d918d19178aef0abcb1978dfe35011d205b98349c1214096353b41e"
+      url "https://github.com/apiplant/merge-safetensors-rs/releases/download/v0.2.1/merge-safetensors-rs-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "12986bcef17e31e63fc886bcfc9ee908705788a74096f4abd3d5e54a0b78e480"
     end
     on_arm do
-      url "https://github.com/apiplant/merge-safetensors-rs/releases/download/v0.2.0/merge-safetensors-rs-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c9bd6fcf1809b32d34617bfaabbcf3d33c12831e40da15e818ec1187dae62c91"
+      url "https://github.com/apiplant/merge-safetensors-rs/releases/download/v0.2.1/merge-safetensors-rs-v0.2.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "18072db194b6cd78e159682a0946be92369ee9188301ace2a1487b26256235e3"
     end
   end
 
