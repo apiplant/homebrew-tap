@@ -5,7 +5,7 @@
 class PhononRsCuda < Formula
   desc "Phonon-2 speech-to-text CLI and dictation daemon (candle) (CUDA build)"
   homepage "https://github.com/apiplant/phonon-rs"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   # Linux x86_64 only: no CUDA on Apple Silicon, and no arm64 CUDA build. It
@@ -15,8 +15,8 @@ class PhononRsCuda < Formula
   depends_on arch: :x86_64
   conflicts_with "phonon-rs", because: "both install the same binaries"
 
-  url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.0/phonon-rs-cuda-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-  sha256 "950011aefa90467988cae40a59d6676f1086d5237ba939c2df97e09da67792cd"
+  url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.1/phonon-rs-cuda-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+  sha256 "7b6b1449a9caa8d7c3c52274a141f22656fb4fe0d091296b31f5c4b7baee8bc4"
 
   def install
     bin.install "phonon"
