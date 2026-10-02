@@ -13,17 +13,17 @@ class LayaRs < Formula
   on_macos do
     on_arm do
       url "https://github.com/apiplant/laya-rs/releases/download/v0.3.1/laya-rs-v0.3.1-aarch64-apple-darwin.tar.gz"
-      sha256 "3d05be14e33de7cd23768e964165ad27caf7092471e20ede117ac7d6eb38e422"
+      sha256 "477ddf187cb1a5db8fbb5a24dc9c2160b5293e425725846a84b0cd28a8e4d0cf"
     end
   end
   on_linux do
     on_intel do
       url "https://github.com/apiplant/laya-rs/releases/download/v0.3.1/laya-rs-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "af20690d5c31b0c52167d160bab261bf8c132986dac5537ccdb9c78ec7487e2f"
+      sha256 "1c3792c4bc7771fe5d98f5d51ac605dc70398ea7089487d5be6831b8c8f72602"
     end
     on_arm do
       url "https://github.com/apiplant/laya-rs/releases/download/v0.3.1/laya-rs-v0.3.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6b8e952b0c32d42a63b5608e8be52b307c68f3053bc2b2d4217aba04fb54c868"
+      sha256 "18fb42815310fde69f1489977d0b1d4072732e92c3bbea39a6035531978e016c"
     end
   end
 
