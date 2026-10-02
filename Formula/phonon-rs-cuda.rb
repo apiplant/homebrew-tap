@@ -16,7 +16,7 @@ class PhononRsCuda < Formula
   conflicts_with "phonon-rs", because: "both install the same binaries"
 
   url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.1/phonon-rs-cuda-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-  sha256 "7b6b1449a9caa8d7c3c52274a141f22656fb4fe0d091296b31f5c4b7baee8bc4"
+  sha256 "097a3e70a0cb2418ba00359f753fc20d9046c7295c894cd3ae2847730431bb35"
 
   def install
     bin.install "phonon"

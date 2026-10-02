@@ -13,17 +13,17 @@ class PhononRs < Formula
   on_macos do
     on_arm do
       url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.1/phonon-rs-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "4fb13e7ec6109d3581d33b0241276a358d6d6e30eb7aee7a548473b4fc9c81e3"
+      sha256 "57f776261529edd67eac762c44d501a16af8a0147c588ab64e0ff84aa7aae9d3"
     end
   end
   on_linux do
     on_intel do
       url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.1/phonon-rs-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5bac69203006101c344567850ab77190ad450d803b6f54a55d48db22ab921e57"
+      sha256 "382b580a112c2d3857eaec38b26a9835920e79ca65183d9273ed1f121257640a"
     end
     on_arm do
       url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.1/phonon-rs-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6cc214367f00d44435bd372338e4fa211649e1680ace79ae2997fa1eb831b03e"
+      sha256 "bf3b6f1208f97afdd94163357afa3141f50f25f1a9414b1c57f4076fa66e64ad"
     end
   end
 
