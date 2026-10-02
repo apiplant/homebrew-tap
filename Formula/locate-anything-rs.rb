@@ -5,25 +5,25 @@
 class LocateAnythingRs < Formula
   desc "Rust (candle) inference for nvidia/LocateAnything-3B visual grounding"
   homepage "https://github.com/apiplant/locate-anything-rs"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   # No bottles: the release archives *are* the binaries, so the formula only
   # unpacks what the tagged workflow already built for each platform.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/locate-anything-rs/releases/download/v0.1.1/locate-anything-rs-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "3f4ab424ca26068ef756ec0a56367d43eaa8454ce27bd81ee86065be5de0f6d8"
+      url "https://github.com/apiplant/locate-anything-rs/releases/download/v0.1.2/locate-anything-rs-v0.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "3563727ed7c6badf47631a5f6aadc1c881f3731223df63b6869da4336b9aabd3"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/locate-anything-rs/releases/download/v0.1.1/locate-anything-rs-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0b3df3efef60f5f246727b5ab6f20662dc98ace799d4bee222a85b25ba5fde5a"
+      url "https://github.com/apiplant/locate-anything-rs/releases/download/v0.1.2/locate-anything-rs-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ce9512a21ec6e7f43046d129bda0e87c13e5a67d2e76887bd1044f543d2fb960"
     end
     on_arm do
-      url "https://github.com/apiplant/locate-anything-rs/releases/download/v0.1.1/locate-anything-rs-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "684e631bc85b971a73f14c44cc0f669215df0b915f1d1d820e0831199676d27c"
+      url "https://github.com/apiplant/locate-anything-rs/releases/download/v0.1.2/locate-anything-rs-v0.1.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ac56be3e775ae5505160c46d5d3996009c8df1db9fe7b956682dcdc526811a3f"
     end
   end
 
