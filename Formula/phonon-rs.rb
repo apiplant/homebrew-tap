@@ -5,25 +5,25 @@
 class PhononRs < Formula
   desc "Phonon-2 speech-to-text CLI and dictation daemon (candle)"
   homepage "https://github.com/apiplant/phonon-rs"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   # No bottles: the release archives *are* the binaries, so the formula only
   # unpacks what the tagged workflow already built for each platform.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.2/phonon-rs-v0.1.2-aarch64-apple-darwin.tar.gz"
-      sha256 "4681681b8603ebb492b497b040e6508717ba57da279b87313c26d3368275ca8c"
+      url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.3/phonon-rs-v0.1.3-aarch64-apple-darwin.tar.gz"
+      sha256 "c6d11e97393cf3b67f55611a3407f3995e2c10fe308b1508c0cf90ce3ade7568"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.2/phonon-rs-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "23e68ee729330331f7c685521be39c6f546cd74698c8b2b325055ea0c0b857c8"
+      url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.3/phonon-rs-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4095803baf5859b9f29c95a10c2dbcaf27431ad3977aed4c593bd700896b0b6b"
     end
     on_arm do
-      url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.2/phonon-rs-v0.1.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8c46cabc1b9ba6e97a04a7692349e259bb5a92762fd9b89eec546f4b0de7419a"
+      url "https://github.com/apiplant/phonon-rs/releases/download/v0.1.3/phonon-rs-v0.1.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ed536cbae08104e53b6b390b3d26d007a674433146d8eef5c5715b156b93dcc1"
     end
   end
 
@@ -31,7 +31,7 @@ class PhononRs < Formula
 
   def install
     bin.install "phonon"
-    bin.install "phonon-dictate" if OS.linux?
+    bin.install "phonon-dictate"
     doc.install "README.md"
   end
 
