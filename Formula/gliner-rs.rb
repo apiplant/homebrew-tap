@@ -13,17 +13,17 @@ class GlinerRs < Formula
   on_macos do
     on_arm do
       url "https://github.com/apiplant/gliner-rs/releases/download/v0.2.4/gliner-rs-v0.2.4-aarch64-apple-darwin.tar.gz"
-      sha256 "f3bcf199f03e349874b33e0f328a470b09391f15a612bfa8015cec2abf8570ce"
+      sha256 "244cefbbf2672974e679b867d9f993a74b0f58abc1fb4865576adbf6841c0839"
     end
   end
   on_linux do
     on_intel do
       url "https://github.com/apiplant/gliner-rs/releases/download/v0.2.4/gliner-rs-v0.2.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3e53938d45d1689215f21f63460e24ac1d9df33f47cc77522803f5d3ad655e1d"
+      sha256 "b5d2b0dbe0716e0315a46909df338c3d1100f73daacbc441bd07c4688cebbf30"
     end
     on_arm do
       url "https://github.com/apiplant/gliner-rs/releases/download/v0.2.4/gliner-rs-v0.2.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8f51544e0c77895a78bfdc94031429384e65a640c27e2ab2446bf02f200337e8"
+      sha256 "525d322118e9c1b99d6fa808b4914b1f71daeec9db74bc3f9bd37c40c720a3a9"
     end
   end
 
