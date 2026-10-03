@@ -5,25 +5,25 @@
 class LayaRs < Formula
   desc "Rust (candle) inference for Laya's typed-decision engine"
   homepage "https://github.com/apiplant/laya-rs"
-  version "0.4.0"
+  version "0.4.1"
   license "Apache-2.0"
 
   # No bottles: the release archives *are* the binary, so the formula only
   # unpacks what the tagged workflow already built for each platform.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/laya-rs/releases/download/v0.4.0/laya-rs-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "624483ecd72b90cb722516c5d12cbeb37cf81551498213a13d0ee3cda9f14032"
+      url "https://github.com/apiplant/laya-rs/releases/download/v0.4.1/laya-rs-v0.4.1-aarch64-apple-darwin.tar.gz"
+      sha256 "8ad34fbe91c00b3429cdb8981b3c50b33ab2ddee9cfa0421a364f174c20742a7"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/laya-rs/releases/download/v0.4.0/laya-rs-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ee11362ce31a3f8159544f46c2f622717bed040b94e2fc32d0b3ec16ad0b1079"
+      url "https://github.com/apiplant/laya-rs/releases/download/v0.4.1/laya-rs-v0.4.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f9a3c737db078d7a01eb8637aa6a71a330508979530cb5fdd282e977f1413275"
     end
     on_arm do
-      url "https://github.com/apiplant/laya-rs/releases/download/v0.4.0/laya-rs-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5e7a0f1cbd8b746a6c39bc28889ad08becd1ef079ff815a0eb9a546ad3b3052d"
+      url "https://github.com/apiplant/laya-rs/releases/download/v0.4.1/laya-rs-v0.4.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6c687397eb939bc1318c1f6ada83f1dd1abe8eeba346c2420ec409d751e1bd52"
     end
   end
 
