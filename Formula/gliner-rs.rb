@@ -5,25 +5,25 @@
 class GlinerRs < Formula
   desc "Rust (candle) inference for GLiNER2 checkpoints"
   homepage "https://github.com/apiplant/gliner-rs"
-  version "0.3.0"
+  version "0.3.1"
   license "Apache-2.0"
 
   # No bottles: the release archives *are* the binaries, so the formula only
   # unpacks what the tagged workflow already built for each platform.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/gliner-rs/releases/download/v0.3.0/gliner-rs-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "4ab59b22d9b4b2afee32d2edfe66b1810ee451b44667f830f4d5baccc3283384"
+      url "https://github.com/apiplant/gliner-rs/releases/download/v0.3.1/gliner-rs-v0.3.1-aarch64-apple-darwin.tar.gz"
+      sha256 "f0f341e401f49a676cc8f2b183fa09be5af97167c0d93c94ef062b5ac6d2cd44"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/gliner-rs/releases/download/v0.3.0/gliner-rs-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4176bfed1420d15c2158873ad930136a104b66e168a0e59af865ce9a68e7194d"
+      url "https://github.com/apiplant/gliner-rs/releases/download/v0.3.1/gliner-rs-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e4b552b4ca9fbf7e734a0c3a2509559af80387d368eb8606a0829194856f66bc"
     end
     on_arm do
-      url "https://github.com/apiplant/gliner-rs/releases/download/v0.3.0/gliner-rs-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "989ece9aa756bdcc654bf7e51de94a763875346b38b965ba241c2bbc60d7e65d"
+      url "https://github.com/apiplant/gliner-rs/releases/download/v0.3.1/gliner-rs-v0.3.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8a9f2c6b0a649c85867059a21e05dfe1f5b3504b556fbe12c547a2dc4a4302f4"
     end
   end
 
