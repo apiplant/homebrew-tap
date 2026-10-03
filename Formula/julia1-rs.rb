@@ -5,25 +5,25 @@
 class Julia1Rs < Formula
   desc "Rust CPU/CUDA inference runtime for the Julia-1 decision model"
   homepage "https://github.com/apiplant/julia1-rs"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   # No bottles: the release archives *are* the binaries, so the formula only
   # unpacks what the tagged workflow already built for each platform.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/julia1-rs/releases/download/v0.2.0/julia1-rs-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "e44ebe4f56e8917fd17f851c187ed133a5a664c0c39123c7a3a64ab2b257af50"
+      url "https://github.com/apiplant/julia1-rs/releases/download/v0.2.1/julia1-rs-v0.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "81f4cf129c9096f88711e39b2959418aa741ce0f4e57951eefdc14ab6315b98a"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/julia1-rs/releases/download/v0.2.0/julia1-rs-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d2daab715516c99705ed1aa78c97680a240d36aec2c6250ec430623c91d94df2"
+      url "https://github.com/apiplant/julia1-rs/releases/download/v0.2.1/julia1-rs-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "317c5c82f1cb41af6d52cd6d27e41ce6a7e24f2883ba2f41645ec4a06c01bcce"
     end
     on_arm do
-      url "https://github.com/apiplant/julia1-rs/releases/download/v0.2.0/julia1-rs-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "16f167cf8b835a423d6ad0e527f92de0c224b446325725b35312ce049fc95071"
+      url "https://github.com/apiplant/julia1-rs/releases/download/v0.2.1/julia1-rs-v0.2.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "642a4c5bad63de4bf06c5f011e8a39dbdd06089bfaac4e908470879ee4fe6a54"
     end
   end
 
