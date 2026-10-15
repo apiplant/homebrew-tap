@@ -5,7 +5,7 @@
 class DramaRs < Formula
   desc "Fish Audio Drama 3 text-to-speech on a single 24 GB GPU (CUDA)"
   homepage "https://github.com/apiplant/drama-rs"
-  version "0.1.1"
+  version "0.2.0"
   license "Apache-2.0"
 
   # Linux x86_64 only: the engine is CUDA. It needs an NVIDIA driver and the
@@ -14,8 +14,8 @@ class DramaRs < Formula
   depends_on :linux
   depends_on arch: :x86_64
 
-  url "https://github.com/apiplant/drama-rs/releases/download/v0.1.1/drama-rs-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-  sha256 "0ce92a68ab4a1d725fd12b0418e1a19773753f76fd14a07f0a95d2b07a283e7d"
+  url "https://github.com/apiplant/drama-rs/releases/download/v0.2.0/drama-rs-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+  sha256 "8e69b5492f5fccf03df0900450769711c996efc9676e0020919f6ec16c79dbcc"
 
   def install
     bin.install "drama"
