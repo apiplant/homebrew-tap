@@ -5,7 +5,7 @@
 class H3Rs < Formula
   desc "MiniMax H3 video with stereo audio on NVIDIA GPUs (CUDA)"
   homepage "https://github.com/apiplant/h3-rs"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   # Linux x86_64 only: the engine is CUDA. It needs an NVIDIA driver, the
@@ -15,8 +15,8 @@ class H3Rs < Formula
   depends_on arch: :x86_64
   depends_on "ffmpeg"
 
-  url "https://github.com/apiplant/h3-rs/releases/download/v0.1.0/h3-rs-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-  sha256 "0da08c403e82bc580be11cbd43e4fc0efd10c58f4ee4f81c6e579578cf1ca3ff"
+  url "https://github.com/apiplant/h3-rs/releases/download/v0.2.0/h3-rs-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+  sha256 "42d42875a6e67af9edb8af6e17b8cf75bb6db50dc20de23fef5dbcb9c0867a6c"
 
   def install
     bin.install "h3"
