@@ -5,7 +5,7 @@
 class SamRsCuda < Formula
   desc "Rust (candle) inference for Segment Anything models (SAM, SAM 2, SAM 3) (CUDA build)"
   homepage "https://github.com/apiplant/sam-rs"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   # Linux x86_64 only: no CUDA on Apple Silicon, and no arm64 CUDA build. It
@@ -15,8 +15,8 @@ class SamRsCuda < Formula
   depends_on arch: :x86_64
   conflicts_with "sam-rs", because: "both install the same binaries"
 
-  url "https://github.com/apiplant/sam-rs/releases/download/v0.1.0/sam-rs-cuda-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-  sha256 "dbea318af884660be033f4e8b9c395b0828213234ebbc69968a4a4f5931df454"
+  url "https://github.com/apiplant/sam-rs/releases/download/v0.1.1/sam-rs-cuda-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+  sha256 "17dd9befa5c671e95a2fabb3903ee94c4405c2abf501eb901a19a6266de116ce"
 
   def install
     bin.install "sam-rs"
