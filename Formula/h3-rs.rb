@@ -5,7 +5,7 @@
 class H3Rs < Formula
   desc "MiniMax H3 video with stereo audio on CUDA or Apple Silicon (MLX)"
   homepage "https://github.com/apiplant/h3-rs"
-  version "0.5.2"
+  version "0.5.3"
   license "Apache-2.0"
 
   # The release archives are the binaries; no source build or bottles.
@@ -13,15 +13,15 @@ class H3Rs < Formula
     depends_on arch: :arm64
     depends_on macos: :sequoia
     on_arm do
-      url "https://github.com/apiplant/h3-rs/releases/download/v0.5.2/h3-rs-v0.5.2-aarch64-apple-darwin.tar.gz"
-      sha256 "9228896255a7d142bffb7bb9b87a379aef79e3368344ada4577d245740eeb113"
+      url "https://github.com/apiplant/h3-rs/releases/download/v0.5.3/h3-rs-v0.5.3-aarch64-apple-darwin.tar.gz"
+      sha256 "f83a9ceab0620cc2b95d212a4a005cb9f2cb4223509cb55f81af571822cd66bc"
     end
   end
   on_linux do
     depends_on arch: :x86_64
     on_intel do
-      url "https://github.com/apiplant/h3-rs/releases/download/v0.5.2/h3-rs-v0.5.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "45bcc79dc06f0b8013693aa831f1edbfcb1becc19794907c22bd2fa26983896a"
+      url "https://github.com/apiplant/h3-rs/releases/download/v0.5.3/h3-rs-v0.5.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "517424e09ad76b13d228c951ec4fb6939e58a83129d05ded5f4a160212347dce"
     end
   end
   depends_on "ffmpeg"
