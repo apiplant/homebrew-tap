@@ -5,19 +5,19 @@
 class KrRs < Formula
   desc "Kubernetes in one static binary: no libc, no third-party crates"
   homepage "https://github.com/apiplant/kr-rs"
-  version "0.3.0"
+  version "0.3.1"
   license "Apache-2.0"
 
   # The release archives are the binaries; no source build or bottles. kr is
   # Linux only (namespaces, cgroup v2, overlayfs).
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/kr-rs/releases/download/v0.3.0/kr-rs-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "51f2430b9cb90d8dc12543dee5f66bfbe4b4d502e233538a42ee5d217e23d047"
+      url "https://github.com/apiplant/kr-rs/releases/download/v0.3.1/kr-rs-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8658eef2297f2892340e382e72bcc79bf3895b7b5a7d292b9796a8c2637e34c6"
     end
     on_arm do
-      url "https://github.com/apiplant/kr-rs/releases/download/v0.3.0/kr-rs-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1615285f0b5b614ecad70ae868131663375d0e481a9b39114070d213bf69c703"
+      url "https://github.com/apiplant/kr-rs/releases/download/v0.3.1/kr-rs-v0.3.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ee2c05c1e0912a754e568207275a04a21b73bdadcb5041099a09ee436d6126dd"
     end
   end
 
