@@ -8,7 +8,7 @@
 class ApiplantSlim < Formula
   desc "apiplant without TypeScript support (no V8)"
   homepage "https://github.com/apiplant/apiplant"
-  version "0.10.0"
+  version "0.11.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   # Both formulae install `bin/apiplant`, so brew has to be told rather than
@@ -20,19 +20,19 @@ class ApiplantSlim < Formula
   # platform, and this template stays aligned with the CI release matrix.
   on_macos do
     on_arm do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.10.0/apiplant-slim-v0.10.0-aarch64-apple-darwin.tar.gz"
-      sha256 "d004ee9261384db3003ef64c0f09fa1ab8af7a0f3f4aff28b7ab75ca706454cd"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.11.0/apiplant-slim-v0.11.0-aarch64-apple-darwin.tar.gz"
+      sha256 "87f0f67d2109cc7b3cbe604dd24d5ebc7dd4eb1890e599643fc24a0851936d14"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.10.0/apiplant-slim-v0.10.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e9f89471b050c1fe26c726b690bc63f2ff1beb326f12de574dfecf0767c1c989"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.11.0/apiplant-slim-v0.11.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a0783fee267fc06d7cd573df5fbf18c2b54026caa6dc4cb1344f17cc041ca98c"
     end
     on_arm do
-      url "https://github.com/apiplant/apiplant/releases/download/v0.10.0/apiplant-slim-v0.10.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "88b100803d04188b26696a745e954e484292572ef90e83cd0f93ce7068a03fe7"
+      url "https://github.com/apiplant/apiplant/releases/download/v0.11.0/apiplant-slim-v0.11.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d824b6bc0ba2a2880576de604a1daecc6b76b17de99afca8d30099dcf268a3e5"
     end
   end
 
