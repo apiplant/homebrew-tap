@@ -5,7 +5,7 @@
 class DramaRs < Formula
   desc "Fish Audio Drama 3 text-to-speech on CUDA or Apple Silicon (MLX)"
   homepage "https://github.com/apiplant/drama-rs"
-  version "0.3.0"
+  version "0.3.1"
   license "Apache-2.0"
 
   # The release archives are the binaries; no source build or bottles.
@@ -14,15 +14,15 @@ class DramaRs < Formula
     depends_on arch: :arm64
     depends_on macos: :sequoia
     on_arm do
-      url "https://github.com/apiplant/drama-rs/releases/download/v0.3.0/drama-rs-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "6a330dfaaddcca57e4605d78bf2e870f894d49c227b89aec10fdad0a9a67a9f5"
+      url "https://github.com/apiplant/drama-rs/releases/download/v0.3.1/drama-rs-v0.3.1-aarch64-apple-darwin.tar.gz"
+      sha256 "0b2e772bc52fbe2bee34cf083ba99bd11c9ddbc4d6dd56a270634569bdc057f8"
     end
   end
   on_linux do
     depends_on arch: :x86_64
     on_intel do
-      url "https://github.com/apiplant/drama-rs/releases/download/v0.3.0/drama-rs-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7cc78e12bcb4feebabb3a4f42e2642e5189e7803ccf26427c51e433652769de1"
+      url "https://github.com/apiplant/drama-rs/releases/download/v0.3.1/drama-rs-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "06eaf881881ecb6cc2420d2abfe154f46c057a3ce1296826393d41aab3edfba7"
     end
   end
 
