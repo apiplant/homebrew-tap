@@ -5,7 +5,7 @@
 class FluidSpeechRsCuda < Formula
   desc "Fluid Speech Mini speech-to-text CLI and dictation daemon (candle) (CUDA build)"
   homepage "https://github.com/apiplant/fluid-speech-rs"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0"
 
   # Linux x86_64 only: no CUDA on Apple Silicon, and no arm64 CUDA build. It
@@ -15,8 +15,8 @@ class FluidSpeechRsCuda < Formula
   depends_on arch: :x86_64
   conflicts_with "fluid-speech-rs", because: "both install the same binaries"
 
-  url "https://github.com/apiplant/fluid-speech-rs/releases/download/v0.1.4/fluid-speech-rs-cuda-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
-  sha256 "d2ac0ad64f58c20d049cc40783c37b095db1f836a83f43f6464a78ad4d5e74a5"
+  url "https://github.com/apiplant/fluid-speech-rs/releases/download/v0.1.5/fluid-speech-rs-cuda-v0.1.5-x86_64-unknown-linux-gnu.tar.gz"
+  sha256 "2972b95039a68133d5d542a890637f8036401c5d04b3f78562a0ea759d0aeddf"
 
   def install
     bin.install "fluid-speech"
